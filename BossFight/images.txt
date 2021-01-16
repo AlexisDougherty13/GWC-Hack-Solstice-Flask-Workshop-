@@ -1,0 +1,3 @@
+../static/cat-3821298_1280.jpg
+../static/forest-3119826_1920.jpg
+../static/ocean-1867285_1920.jpg
