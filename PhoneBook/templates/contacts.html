@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Phone Book</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header role="banner"> 
+			<h1>Contacts</h1>
+        </header>
+        <main role="main">
+			<table>
+				{% for i in contacts %}
+				<tr>
+					<td>{{ i.name }}</td>
+					<td>{{ i.phone }}</td>
+					<td>{{ i.email }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+			{% if contacts|length == 5 %}
+				<p>{{ message5 }}</p>
+			{% endif %}
+			{% if contacts|length == 4 %}
+				<p>{{ message4 }}</p>
+			{% endif %}
+        </main>
+    </body>
+</html>
