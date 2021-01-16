@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Select the Rainbow</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+	<style>
+		body { background-color: {{ color }}; }
+	</style>
+    <body>
+        <header role="banner"> 
+			<h1>Select the Rainbow</h1>
+        </header>
+        <main role="main">
+			<p>Pick a color in the dropdown to change the background color.</p><br>
+			<form action="{{ url_for('changeBackground') }}" method="get"> 
+			  <select name="color">
+				<option value="white">-</option>
+				<option value="red">red</option>
+				<option value="orange">orange</option>
+				<option value="yellow">yellow</option>
+				<option value="green">green</option>
+				<option value="blue">blue</option>
+				<option value="purple">purple</option>
+				<option value="pink">pink</option>
+			  </select>
+			  <br>
+			  <input type=submit value="Submit">
+			</form>
+        </main>
+    </body>
+</html>
