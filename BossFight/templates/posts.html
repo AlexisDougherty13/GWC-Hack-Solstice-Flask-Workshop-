@@ -1,0 +1,83 @@
+<!-- This is part of the Boss Fight Hands On Assignment -->
+<!-- Parts of this project are complete. 
+There are notes ("FILLIN") through this file where something is missing. 
+Add in the missing bits to complete the website. Good luck! -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Serendipitous - Posts</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+        </script>
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">
+        </script>
+        <![endif]-->
+    </head>
+	<style>
+		body { background-color: black; }
+		h1 { color: #FFD700;
+			 font-family: 'Merienda One', cursive;
+			 font-size: 5em; }
+		h2, p { color: white; }
+		div.gallery {
+		  margin: 5px;
+		  border: 1px solid #ccc;
+		  float: left;
+		  width: 180px;
+		}
+
+		div.gallery:hover {
+		  border: 1px solid #777;
+		}
+
+		div.gallery img {
+		  width: 100%;
+		  height: auto;
+		}
+
+		div.desc {
+		  padding: 15px;
+		  text-align: center;
+		}
+		
+		form { background-color: gray; }
+	</style>
+    <body>
+        <header role="banner"> 
+			<h2>Welcome, FILLIN user's name</h2>
+			<center>
+			<br><br><br>
+			<h1>Serendipitous</h1>
+			</center>
+        </header>
+        <main role="main">
+			<br>
+			<center>
+			<h2>Posts</h2>
+			<form action = "" method = "post" enctype="multipart/form-data"> <!-- FILLIN action --> 
+				<input type="hidden" name="username" value="FILLIN user's name"></input>
+				<input type="file" name="file" />  
+				<input type = "submit" value="Upload">  
+			</form>
+			<br><br><br>
+			<!-- FILLIN if username is equal to "Agent" -->
+				<div class="gallery">
+					<img src="../static/secret-1142327_1920.jpg" width="600" height="400">
+				</div>
+			<!-- FILLIN end of the if statement -->
+			<!-- FILLIN for every link in images array -->
+				<div class="gallery">
+					<img src="FILLIN link" width="600" height="400">
+				</div>
+			<!-- FILLIN end of the for loop -->
+			</center>
+        </main>
+    </body>
+</html>
