@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Gate Keeper</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header role="banner"> 
+			<h1>Gate Keeper</h1>
+        </header>
+        <main role="main">
+			<p>Answer the Gate Keeper correctly in order to be let through.</p><br>
+			<p>What is the average rainfall of the amazon river basin?</p>
+			<form action="{{ url_for('question') }}" method="post"> 
+			  <input type="text" name="answer" value=""><br> 
+			  <br>
+			  <input type=submit value="Submit">
+			</form>
+			<br>
+			{{ message }}
+        </main>
+    </body>
+</html>
