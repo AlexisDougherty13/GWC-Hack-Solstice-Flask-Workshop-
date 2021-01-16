@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Serendipitous - Login</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+        </script>
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">
+        </script>
+        <![endif]-->
+    </head>
+	<style>
+		body { background-color: black; }
+		h1 { color: #FFD700;
+			 font-family: 'Merienda One', cursive;
+			 font-size: 5em; }
+		h2, p { color: white; }
+	</style>
+    <body>
+        <header role="banner"> 
+			<center>
+			<br><br><br>
+			<h1>Serendipitous</h1>
+			</center>
+        </header>
+        <main role="main">
+			<br>
+			<center>
+			<h2>Login</h2>
+			<form action="{{ url_for('login') }}" method="post"> 
+			  <input type="text" id="username" name="username" value="Username"><br> 
+			  <br>
+			  <input type="text" id="password" name="password" value="Password"><br> 
+			  <br>
+			  <input type=submit value="Submit">
+			</form>
+			<br>
+			<p>{{ message }}</p>
+			</center>
+        </main>
+    </body>
+</html>
